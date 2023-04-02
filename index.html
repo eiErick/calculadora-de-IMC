@@ -8,19 +8,34 @@
     <title>Calculadora de IMC</title>
 </head>
 <body>
-    <p id="teste">teste</p>
-
     <div id="container">
-        <h1>Calculadora de IMC</h1>
+        <h1>CALCULADOR DE IMC</h1>
         <div id="dados">
-            <span>Peso</span>
-            <input type="range" name="range" id="range" max="2500">KG
+            
+            <h2>Peso</h2>
+            <input class="input-dado" type="number" name="peso" id="peso" max="3" maxlength="6" placeholder="80">
+            <div class="dado-input">Kg</div>
+            
+            <h2>Altura</h2>
+            <input class="input-dado" type="number" name="altura" id="altura" step="0.1" maxlength="4" placeholder="172">
+            <div class="dado-input">Cm</div>
 
-            <span>Altura</span>
-            <input type="range" name="altura" id="altura" max="300" step="0.1">Metros
         </div>
-        <input onclick="teste()" type="button" value="Calcular">
+        <div id="resultado">
+            <p id="res">IMC: --</p>
+            <p id="inf"><strong>preencha</strong> os dados acima e presione <strong>calcular</strong> para ver o <strong>resultado</strong>.</p>
+
+        </div>
+        <input onclick="calcular()" id="button" type="button" value="Calcular">
     </div>
+
+    <footer>
+        <div id="container-footer">
+            <a id="tebela-imc-link" rel=”next” target="_self" href="tabela-imc.html">Tabela IMC</a>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
+    
 </body>
 </html>

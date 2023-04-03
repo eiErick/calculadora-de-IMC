@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <title>Calculadora de IMC</title>
 </head>
@@ -29,10 +30,19 @@
         <input onclick="calcular()" id="button" type="button" value="Calcular">
     </div>
 
-    <footer>
-        <div id="container-footer">
-            <a id="tabela-imc-link" rel=”next” target="_self" href="tabela-imc.html">Tabela IMC</a>
-        </div>
+    <footer class="parent">
+        <a class="links" id="tabela-imc-link" rel=”next” target="_self" href="html/tabela-imc.html">Tabela IMC &#X1F517</a>
+
+        <span class="divisor">|</span>
+
+        <a class="links" target="_blank" href="https://eierick.github.io/DevLinks/">Érick da Silva &#X1F517</a>
+
+        <span class="divisor">|</span>
+
+        <p class="links">
+            Dark Mode
+            <i id="mode-icon" class="fa-solid fa-moon"></i>
+        </p>
     </footer>
 
     <script src="scripts/script.js"></script>

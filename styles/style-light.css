@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+:root {
+    --background-img-dark: #2b2a33;
+    --background-img-light: #f9f9fb;
+
+    --sombra-branca: 3px 3px 8px rgba(255, 255, 255, 0.05);
+    --sombra-preta: 3px 3px 8px rgba(0, 0, 0, 0.1);
+
+    --background-color-light-transparent: rgba(255, 255, 255, .1);
+    --background-color-dark-transparent: rgba(0, 0, 0, .1);
+
+    --radius: 8px
+}
+
+body {
+    background: var(--background-img-light);
+    color: black;
+}
+
+#container {
+    background-color: var(--background-color-dark-transparent);
+    box-shadow:var(--sombra-preta);
+}
+
+#mostrarOcutar {
+    box-shadow: var(--sombra-preta);
+    background-color: var(--background-color-dark-transparent);
+}
+
+footer {
+    background-color: var(--background-color-dark-transparent);
+    box-shadow: var(--sombra-preta);
+}
+
+.links {
+    color: black;
+}
+
+#resultado {
+    background: var(--background-img-light);
+}
+
+#containerTabela {
+    box-shadow: var(--sombra-preta);
+    background-color: var(--background-color-dark-transparent);
+}

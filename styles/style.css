@@ -141,7 +141,7 @@ footer {
     padding: 10px;
     box-shadow: var(--sombra-branca);
 
-    background-color: var(--background-color-light-transparent);
+    background-color:  var(--background-color-light-transparent);
 
     border-radius: var(--radius);
 }
@@ -189,7 +189,7 @@ table {
     padding: 10px;
     box-shadow: var(--sombra-branca);
 
-    background-color: rgba(255, 255, 255, .1);
+    background-color: var(--background-color-light-transparent);
     backdrop-filter: blur(1000px);
 
     border-radius: 0 0 8px 8px;
@@ -204,37 +204,4 @@ caption {
 th, td {
     border: 1px solid rgba(0, 0, 0, .5);
     padding: 10px;
-}
-
-/*Light mode*/
-
-body.light {
-    background: var(--background-img-light);
-    color: black;
-}
-
-#container.light {
-    background-color: var(--background-color-dark-transparent);
-    box-shadow:var(--sombra-preta);
-}
-
-#footer.light {
-    background-color: var(--background-color-dark-transparent);
-    box-shadow: var(--sombra-preta);
-}
-
-#meuSite.light {
-    color: black;
-}
-
-footer > a > p.light{
-    color: black;
-}
-
-footer > div > span.light {
-    color: black;
-}
-
-i.light {
-    color: black;
 }

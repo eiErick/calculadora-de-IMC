@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/style.css">
+    <p id="styleLight"><link rel="stylesheet" href="styles/style-light.css"></p>
+    <p id="style"><link rel="stylesheet" href="styles/style.css"></p>
     <title>Calculadora de IMC</title>
 </head>
-<body>
+<body id="body">
     <div id="container">
         <h1>CALCULADOR DE IMC</h1>
         <div id="dados">
@@ -30,19 +31,59 @@
         <input onclick="calcular()" id="button" type="button" value="Calcular">
     </div>
 
-    <footer class="parent">
-        <a class="links" id="tabela-imc-link" rel=”next” target="_self" href="html/tabela-imc.html">Tabela IMC &#X1F517</a>
+    <div class="ativo" onclick="mostrarOcutar()" id="mostrarOcutar">
+        <p id="textoMostrarOcutar" class="links">Mostra Tabela do IMC</p>
+    </div>
+
+    <div id="containerTabela">
+        <table id="tabela">
+            <colgroup>
+                <col class="Classificação">
+                <col class="imc">
+            </colgroup>
+            <tr>
+                <caption>Tabela de IMC</caption>
+                <th scope="col" >Classificação</th>
+                <th scope="col">IMC</th>
+            </tr>
+            <tr>
+                <td>Abaixo do Peso</td>
+                <td>Menor que 18,5</td>
+            </tr>
+            <tr>
+                <td>Normal</td>
+                <td>18,5 ~ 24,9</td>
+            </tr>
+            <tr>
+                <td>Sobre Peso</td>
+                <td>25 ~ 29,9</td>
+            </tr>
+            <tr>
+                <td>Obesidade Grau 1</td>
+                <td>30 ~ 34,9</td>
+            </tr>
+            <tr>
+                <td>Obesidade Grau 2</td>
+                <td>35 ~ 39,9</td>
+            </tr>
+            <tr>
+                <td>Obesidade Grau 3</td>
+                <td>Acima de 40</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer id="footer" class="parent">
+
+        <a onclick="darkLightTabela()" class="links" id="meuSite" target="_blank" href="https://eierick.github.io/DevLinks/"><p id="meuSite">Érick da Silva &#X1F517</p></a>
 
         <span class="divisor">|</span>
 
-        <a class="links" target="_blank" href="https://eierick.github.io/DevLinks/">Érick da Silva &#X1F517</a>
+        <div onclick="lightDarkMode()" class="links">
+            <span id="nomeDarkMode"><p style="display: inline;" id="textoLightDarkMode">Ativar Light Mode</p></span>
+            <i id="mode-icon" class="fa-solid fa-sun"></i>
+        </div>
 
-        <span class="divisor">|</span>
-
-        <p class="links">
-            Dark Mode
-            <i id="mode-icon" class="fa-solid fa-moon"></i>
-        </p>
     </footer>
 
     <script src="scripts/script.js"></script>
